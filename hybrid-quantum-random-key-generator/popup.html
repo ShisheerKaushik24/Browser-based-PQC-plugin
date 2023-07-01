@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <script src="popup.js" defer></script>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f2f2f2;
+                font-family: Arial, sans-serif;
+            }
+            
+            h1 {
+                font-size: 24px;
+                margin-bottom: 20px;
+                color: #3b78e7;
+            }
+            
+            #rn {
+                font-size: 30px;
+                text-align: center;
+                margin: 10px 0;
+                color: #222222;
+            }
+            
+            .form-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 250px;
+                padding: 20px;
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            
+            .txt {
+                font-size: 14px;
+                margin-bottom: 5px;
+                color: #555555;
+            }
+            
+            .inp {
+                font-size: 14px;
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            
+            #btn {
+                font-size: 14px;
+                width: 100%;
+                height: 40px;
+                margin-top: 20px;
+                border: none;
+                background-color: #3b78e7;
+                color: white;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+            
+            #btn:focus {
+                outline: none;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <h1>Hybrid Quantum Random Key Generator</h1>
+            <div>
+                <label class="txt" for="keyLen">Key Length [10, 128]</label>
+                <input id="keyLen" class="inp" type="number" min="10" max="128">
+            </div>
+            <button id="btn" autofocus>GENERATE KEY</button>
+            <button id="downloadBtn">Download Key</button>
+        </div>
+    </body>
+</html>

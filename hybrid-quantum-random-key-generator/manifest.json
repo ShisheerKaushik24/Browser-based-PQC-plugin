@@ -1,0 +1,11 @@
+{
+  "name": "Hybrid Quantum Key Generator",
+  "short_name": "q-rkg",
+  "description": "A true hybrid quantum key number generator.",
+  "version": "0.1",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "manifest_version": 3
+}
