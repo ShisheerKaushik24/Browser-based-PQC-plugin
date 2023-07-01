@@ -65,7 +65,7 @@ function generateRandomKey(minLength, maxLength) {
   
   let btnElement = document.getElementById("btn");
   if (btnElement) {
-    btnElement.onclick = setQRN;
+    btnElement.onclick = setQRK;
   }
   
   setQRK();
